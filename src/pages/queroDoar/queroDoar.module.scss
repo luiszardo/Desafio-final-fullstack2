@@ -1,0 +1,67 @@
+.queroDoarSection {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  p {
+    font-size: 22px;
+  }
+}
+
+form {
+  border: solid #005695;
+  border-radius: 20px;
+  height: 70%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .cabecalhoForm {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+input {
+  width: 90%;
+  height: 5vh;
+  border: solid #005695;
+  border-radius: 15px;
+  padding-left: 15px;
+
+  &::placeholder {
+    font-size: 12px;
+    color: #000;
+  }
+}
+
+.buttonDoar {
+  width: 50%;
+  height: 6vh;
+  font-size: 15px;
+  background-color: #005695;
+  color: #fff;
+  padding: 0%;
+}
+
+@media (max-width: 780px) {
+  .queroDoarSection {
+    height: 100vh;
+
+    p {
+      font-size: 18px;
+      text-align: center;
+      width: 70%;
+    }
+  }
+
+  form {
+    font-size: 15px;
+    width: 90%;
+  }
+}

@@ -1,0 +1,48 @@
+.livroDoados {
+  height: 80vh;
+  width: 100%;
+
+  h1 {
+    text-align: center;
+    margin-top: 3%;
+  }
+}
+
+.livros {
+  border: solid #005695;
+  border-radius: 7%;
+  width: 12vw;
+  height: 31vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 10%;
+  margin-top: 5%;
+
+  p {
+    color: #000;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 780px) {
+  .livroDoados {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    h1 {
+      width: 80%;
+      text-align: center;
+      padding-left: 30px;
+    }
+  }
+
+  .livros {
+    width: 60%;
+  }
+}

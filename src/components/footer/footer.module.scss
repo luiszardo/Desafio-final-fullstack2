@@ -1,0 +1,43 @@
+.contatosFooter {
+  background-color: #005695;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3%;
+  align-items: center;
+  color: #ffff;
+
+  nav{
+    width: 17%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.copyRight{
+  height: 8vh;
+  color: #fff;
+  background-color: #232020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 780px) {
+  .contatosFooter{
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    nav{
+      width: 60%;
+    }
+  }
+
+  .copyRight{
+    p{
+      font-size: 13px;
+      width: 60%;
+      text-align: center;
+    }
+  }
+}
