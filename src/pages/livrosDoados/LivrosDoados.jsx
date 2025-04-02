@@ -22,13 +22,19 @@ export default function LivroDoados() {
   console.log(livros)
 
   return (
-    <section className={s.livroDoados}>
+    <section className={s.livrosDoadosSection}>
       <h1>Livros Doados</h1>
-      <section className={s.livros}>
-        <img src={Livro} alt="Capa do livro O Protagonista" />
-        <p>O protagonista</p>
-        <p>Susanne Andrade</p>
-        <p>Ficção</p>
+      <section className={s.containerCards}>
+        {livros.map((item) => (
+          <section>
+            <img src={item.image_url} alt={item.titulo} />
+            <div>
+              <h3>{item.titulo}</h3>
+              <p>{item.categoria}</p>
+              <p>{item.autor}</p>
+            </div>
+          </section>
+        ))}
       </section>
     </section>
   )
